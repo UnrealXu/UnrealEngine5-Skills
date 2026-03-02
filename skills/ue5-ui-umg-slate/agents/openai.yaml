@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 UMG + Slate UI
+short_description: Implement UE5.6/UE5.7 UI features across UMG, Slate, and hybrid bridge widgets with correct lifecycle handling.
+default_prompt: Build this UE5.6/UE5.7 UI feature using UMG/Slate best-fit architecture, including binding lifecycle, focus handling, and viewport-safe tooltip behavior.

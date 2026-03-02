@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Performance & Packaging
+short_description: Run UE5.6/UE5.7 performance triage and release-readiness checks before packaging.
+default_prompt: Prepare this UE5.6/UE5.7 feature for release by profiling key performance metrics, validating packaging prerequisites, and producing a go/no-go checklist.

@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Module Router
+short_description: Route UE5.6/UE5.7 requests to the right skill by exact module name and alias mapping.
+default_prompt: Identify the UE5.6/UE5.7 module(s) in this request, route to the most precise skill using the routing table, and explain routing confidence.

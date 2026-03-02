@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 World Interaction
+short_description: Build pickup and spawner systems with clear interaction checks, feedback, and lifecycle control.
+default_prompt: Implement this UE5.6/UE5.7 world interaction feature with pickup/spawner actor design, overlap or trace validation, and success/failure lifecycle behavior.

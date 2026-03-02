@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Auto Assistant
+short_description: Beginner-friendly UE5.6/UE5.7 entry that auto-routes normal language requests to the right skill.
+default_prompt: Interpret this UE5.6/UE5.7 request from natural language and auto-route to the best skill, with one primary route and confidence.

@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Architecture
+short_description: Plan module boundaries, Build.cs dependencies, and reflection exposure in UE5.6/UE5.7 projects.
+default_prompt: Analyze the current Unreal project architecture and produce a module boundary plan with Build.cs dependencies, API ownership, and risk controls.

@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 C++ Gameplay
+short_description: Build UE5.6/UE5.7 gameplay classes with reflection macros, Blueprint APIs, and robust component logic.
+default_prompt: Implement UE5.6/UE5.7 gameplay C++ code with complete .h/.cpp output, proper macros, includes, and non-deprecated APIs.

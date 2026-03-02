@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Debug & Validation
+short_description: Diagnose UE5.6/UE5.7 gameplay issues with log-first triage, asset checks, and minimal reproducible scenarios.
+default_prompt: Debug this UE5.6/UE5.7 issue by producing a minimal repro, log analysis, fault-domain isolation, and prioritized fix steps.

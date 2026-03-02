@@ -1,0 +1,3 @@
+display_name: UE5.6/UE5.7 Blueprint Workflow
+short_description: Build Blueprint features with deterministic node wiring, hotkey fast path, and compile-safe graph changes.
+default_prompt: Implement this UE5.6/UE5.7 Blueprint feature by listing graph-level steps first, then node and pin connections, using add_input_key_event for keyboard input.
