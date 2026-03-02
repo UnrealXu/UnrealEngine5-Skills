@@ -1,4 +1,4 @@
-# UnrealEngine5-Skills
+﻿# UnrealEngine5-Skills
 
 [English](#english) | [中文](#中文)
 
@@ -12,6 +12,7 @@ This repository provides reusable skill workflows to help with:
 - Gameplay C++ development
 - UI (UMG/Slate) tasks
 - Save/Load and replication
+- PCG procedural building generation
 - Debugging and validation
 - Performance and packaging checks
 - Architecture and module-boundary design
@@ -28,6 +29,7 @@ This repository provides reusable skill workflows to help with:
 - `ue5-save-load-replication`: SaveGame and multiplayer sync workflow
 - `ue5-ui-umg-slate`: UMG/Slate implementation guidance
 - `ue5-world-interaction`: pickups, spawners, overlap/trace interaction logic
+- `ue5-pcg-building`: PCG building generation, shape grammar, and runtime generation validation
 
 ### Quick Start
 
@@ -61,6 +63,7 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - Gameplay C++ 开发
 - UI（UMG/Slate）开发
 - 存档/读档与多人同步
+- PCG 程序化建筑生成
 - 调试与验证
 - 性能与打包检查
 - 架构与模块边界设计
@@ -77,6 +80,7 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - `ue5-save-load-replication`：SaveGame 与多人同步工作流
 - `ue5-ui-umg-slate`：UMG/Slate UI 开发指导
 - `ue5-world-interaction`：拾取、生成器、Overlap/Trace 交互逻辑
+- `ue5-pcg-building`：PCG 建筑生成、Shape Grammar 与运行时生成验证
 
 ### 快速开始
 
