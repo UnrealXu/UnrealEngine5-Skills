@@ -6,6 +6,12 @@
 
 This folder contains Codex skills for Unreal Engine 5.6/5.7 projects.
 
+### Skills Overview Screenshot
+
+![UE5 Skills Overview](./assets/ue5-skills-overview.png)
+
+> Screenshot of the Codex Skills panel showing the installed UE5 skill set and enabled status (captured on March 3, 2026).
+
 ### What Is Included
 
 - Routing skills:
@@ -108,6 +114,12 @@ This skill pack is still in active iteration.
 ## 中文
 
 本目录提供面向 Unreal Engine 5.6/5.7 的 Codex 技能包。
+
+### Skills 总览截图
+
+![UE5 Skills 总览](./assets/ue5-skills-overview.png)
+
+> 该图为 Codex Skills 面板截图，展示当前已安装的 UE5 技能集合及启用状态（截图时间：2026年3月3日）。
 
 ### 已包含技能
 
