@@ -28,6 +28,9 @@ Upgraded skills:
 - `ue5-cpp-gameplay`
 - `ue5-save-load-replication`
 - `ue5-world-interaction`
+- `ue5-ui-umg-slate`
+- `ue5-performance-packaging`
+- `ue5-debug-validation`
 
 What changed in upgraded skills:
 
@@ -106,6 +109,9 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - `ue5-cpp-gameplay`
 - `ue5-save-load-replication`
 - `ue5-world-interaction`
+- `ue5-ui-umg-slate`
+- `ue5-performance-packaging`
+- `ue5-debug-validation`
 
 已升级技能统一补齐：
 

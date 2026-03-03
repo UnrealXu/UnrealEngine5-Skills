@@ -31,6 +31,9 @@ Skills already upgraded to the UE5.7 actionable format:
 - `ue5-cpp-gameplay`
 - `ue5-save-load-replication`
 - `ue5-world-interaction`
+- `ue5-ui-umg-slate`
+- `ue5-performance-packaging`
+- `ue5-debug-validation`
 
 Each upgraded skill now contains:
 
@@ -131,6 +134,9 @@ This skill pack is still in active iteration.
 - `ue5-cpp-gameplay`
 - `ue5-save-load-replication`
 - `ue5-world-interaction`
+- `ue5-ui-umg-slate`
+- `ue5-performance-packaging`
+- `ue5-debug-validation`
 
 以上技能统一补齐了：
 
