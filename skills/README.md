@@ -1,68 +1,74 @@
 # UE5 Skills README
 
-A Codex skill set for Unreal Engine projects targeting UE5.6 and UE5.7.
-It routes user requests to focused workflows for Blueprint, C++, UI, networking, save/load, debugging, performance, and architecture.
+[English](#english) | [中文](#中文)
 
-## Scope
+## English
 
-- Engine versions: UE5.6 and UE5.7
-- Runtime: Codex CLI + Unreal project workspace
-- Goal: deterministic routing and reusable task workflows
+This folder contains Codex skills for Unreal Engine 5.6/5.7 projects.
 
-## Risk Notice (Testing Stage)
+### What Is Included
 
-This skill pack is currently in testing and iterative improvement stage.
-Use with caution in production projects.
+- Routing skills:
+  - `ue5-auto-assistant`
+  - `ue5-module-router`
+- Domain skills:
+  - `ue5-architecture`
+  - `ue5-blueprint-workflow`
+  - `ue5-cpp-gameplay`
+  - `ue5-debug-validation`
+  - `ue5-performance-packaging`
+  - `ue5-save-load-replication`
+  - `ue5-ui-umg-slate`
+  - `ue5-world-interaction`
+  - `ue5-pcg-building`
 
-- Always back up your project before applying changes generated from skills.
-- Validate in a sandbox/test branch first, then merge into production.
-- Review generated Blueprint/C++ changes before final integration.
+### UE5.7 Actionable Upgrade Status
 
-Chinese notice:
+Skills already upgraded to the UE5.7 actionable format:
 
-- 当前技能包处于测试阶段，请谨慎在正式项目中使用。
-- 使用前请先做好项目备份，并优先在测试分支验证后再合入主分支。
-- 欢迎大家共同构建和完善本技能包（规则、话术、工作流与示例）。
+- `ue5-pcg-building`
+- `ue5-blueprint-workflow`
+- `ue5-cpp-gameplay`
+- `ue5-save-load-replication`
+- `ue5-world-interaction`
 
-## Skills
+Each upgraded skill now contains:
 
-- `ue5-auto-assistant`: natural-language entry and auto-routing
-- `ue5-module-router`: module-name and alias based routing
-- `ue5-architecture`: module boundaries, Build.cs, ownership
-- `ue5-blueprint-workflow`: Blueprint graph implementation workflow
-- `ue5-cpp-gameplay`: gameplay C++ implementation workflow
-- `ue5-debug-validation`: issue triage and validation workflow
-- `ue5-performance-packaging`: performance and packaging checks
-- `ue5-save-load-replication`: save/load and multiplayer sync
-- `ue5-ui-umg-slate`: UMG/Slate UI workflow
-- `ue5-world-interaction`: pickups, spawners, traces, overlap logic
-- `ue5-pcg-building`: PCG and Shape Grammar building generation workflow
+- `UE5.7 API Anchors` (engine class/function/node anchors)
+- stage contract section (decision-complete workflow contract)
+- executable failure handling (`symptom -> locate -> fix`)
+- explicit UE5.6/UE5.7 compatibility notes
 
-## Key Routing Data
+### Key Routing Data
 
 - `skills/ue5-architecture/references/ue5-engine-module-index-v2.csv`
 - `skills/ue5-architecture/references/ue5-module-routing-table-final.csv`
 
-## Quick Usage
-
-Use normal language or call a skill directly:
-
-- `Use ue5-auto-assistant to design an inventory feature`
-- `Use ue5-module-router for AssetRegistry troubleshooting`
-- `Use ue5-architecture to split Runtime and Editor modules`
+### Quick Usage
 
 Recommended flow:
 
-1. `ue5-auto-assistant`
-2. `ue5-module-router` (when module names are present)
-3. target skill (for example `ue5-cpp-gameplay`)
+1. Use `ue5-auto-assistant`
+2. If module names are present, use `ue5-module-router`
+3. Execute the routed target skill
 
-## Rebuild Routing Index
+Examples:
+
+- `Use ue5-auto-assistant to design an inventory feature`
+- `Use ue5-module-router for AssetRegistry troubleshooting`
+- `Use ue5-cpp-gameplay to implement a replicated component`
+
+### Validate Skill Pack
+
+```powershell
+python .\skills\scripts\validate_skills.py
+```
+
+Expected output: `Validation OK`
+
+### Rebuild Routing Index (Architecture Skill)
 
 Auto-detect engine source:
-
-- Priority 1: `UE_ENGINE_SOURCE` / `UE_ENGINE_ROOT` environment variables
-- Priority 2: common install paths (prefers UE_5.7, fallback UE_5.6)
 
 ```powershell
 python .\skills\ue5-architecture\scripts\generate_module_index_v2.py
@@ -74,67 +80,83 @@ Explicit engine source:
 python .\skills\ue5-architecture\scripts\generate_module_index_v2.py --engine-source "E:\UEVersion\UE_5.7\Engine\Source"
 ```
 
-Prefer a specific version:
-
-```powershell
-python .\skills\ue5-architecture\scripts\generate_module_index_v2.py --engine-version 5.6
-```
-
-Outputs:
-
-- `ue5-engine-module-index-v2.csv`
-- `ue5-engine-module-index-v2.md`
-- `ue5-module-routing-table-final.csv`
-
-## Sync To Global Codex Skills
+### Sync To Global Codex Skills
 
 ```powershell
 robocopy .\skills "$env:USERPROFILE\.codex\skills" /MIR
 ```
 
-## Release Validation
+### Publish Checklist
 
-Run the pack validator before publishing:
+1. Regenerate routing index files if architecture references changed.
+2. Run `validate_skills.py`.
+3. Confirm `SKILL.md` frontmatter and references are valid.
+4. Commit only intended `skills/` changes.
+5. Push and verify skill rendering in your Codex/IDE environment.
+
+### Risk Notice
+
+This skill pack is still in active iteration.
+
+- Back up project data before applying generated changes.
+- Validate in a test branch/sandbox first.
+- Review generated Blueprint/C++ outputs before merging.
+
+## 中文
+
+本目录提供面向 Unreal Engine 5.6/5.7 的 Codex 技能包。
+
+### 已包含技能
+
+- 路由类技能：
+  - `ue5-auto-assistant`
+  - `ue5-module-router`
+- 领域类技能：
+  - `ue5-architecture`
+  - `ue5-blueprint-workflow`
+  - `ue5-cpp-gameplay`
+  - `ue5-debug-validation`
+  - `ue5-performance-packaging`
+  - `ue5-save-load-replication`
+  - `ue5-ui-umg-slate`
+  - `ue5-world-interaction`
+  - `ue5-pcg-building`
+
+### UE5.7 可落地化升级状态
+
+已完成升级的技能：
+
+- `ue5-pcg-building`
+- `ue5-blueprint-workflow`
+- `ue5-cpp-gameplay`
+- `ue5-save-load-replication`
+- `ue5-world-interaction`
+
+以上技能统一补齐了：
+
+- `UE5.7 API Anchors`（具体引擎类/函数/节点锚点）
+- 阶段契约（保证实现可执行、可交付）
+- 可执行故障处理（症状 -> 定位 -> 修复）
+- UE5.6/UE5.7 兼容说明
+
+### 推荐使用流程
+
+1. 先用 `ue5-auto-assistant`
+2. 识别到模块名时，使用 `ue5-module-router`
+3. 执行目标技能
+
+### 校验
 
 ```powershell
 python .\skills\scripts\validate_skills.py
 ```
 
-Expected output:
+期望输出：`Validation OK`
 
-- `Validation OK`
-- no `ue56-` / `ue57x-` legacy tokens
-- all `SKILL.md` files have valid frontmatter and no BOM
+### 风险提示
 
-## Publish Checklist
+当前技能包仍在持续迭代中：
 
-1. Regenerate routing index CSV/MD.
-2. Run `validate_skills.py`.
-3. Verify one active source of truth:
-   - project-local `.codex/skills`, or
-   - user-global `%USERPROFILE%\.codex\skills`.
-4. Restart Codex/IDE settings page and confirm only `ue5-*` skills are loaded.
-5. Commit `skills/` with updated references and docs.
-
-## Distribution Tips
-
-- For GitHub release: publish the `skills/` folder directly.
-- Avoid committing machine-specific paths or local user IDs in docs/scripts.
-- Keep `agents/openai.yaml` aligned with each `SKILL.md`.
-```
-
-## Troubleshooting
-
-- `missing YAML frontmatter delimited by ---`
-  - Ensure `SKILL.md` starts with `---`
-  - Remove UTF-8 BOM from `SKILL.md`
-- unstable routing results
-  - regenerate routing index
-  - confirm `ue5-module-routing-table-final.csv` is up to date
-  - include explicit module names when possible
-
-## Maintenance
-
-- regenerate index after engine updates
-- keep `ue5-auto-assistant` and `ue5-module-router` routing docs aligned
-- update this README when adding/removing skills
+- 应用前先备份项目
+- 先在测试分支或沙盒验证
+- Blueprint/C++ 自动生成结果请人工复核后再合并

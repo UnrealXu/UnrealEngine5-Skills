@@ -17,6 +17,25 @@ This repository provides reusable skill workflows to help with:
 - Performance and packaging checks
 - Architecture and module-boundary design
 
+### Latest Update (March 2026)
+
+The skill pack has started a UE5.7 actionable upgrade pass.
+
+Upgraded skills:
+
+- `ue5-pcg-building`
+- `ue5-blueprint-workflow`
+- `ue5-cpp-gameplay`
+- `ue5-save-load-replication`
+- `ue5-world-interaction`
+
+What changed in upgraded skills:
+
+- Added `UE5.7 API Anchors` sections with concrete engine class/function/node references
+- Added stage-contract sections to make workflows decision-complete
+- Converted failure handling into executable `symptom -> locate -> fix` checklists
+- Added explicit UE5.6/UE5.7 compatibility notes
+
 ### Skill List
 
 - `ue5-auto-assistant`: default entry and intent-based routing
@@ -77,6 +96,23 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - 调试与验证
 - 性能与打包检查
 - 架构与模块边界设计
+
+### 最新更新（2026年3月）
+
+技能包已开始进行 UE5.7 可落地化升级，当前已完成：
+
+- `ue5-pcg-building`
+- `ue5-blueprint-workflow`
+- `ue5-cpp-gameplay`
+- `ue5-save-load-replication`
+- `ue5-world-interaction`
+
+已升级技能统一补齐：
+
+- `UE5.7 API Anchors`（具体类/函数/节点锚点）
+- 阶段契约（保证流程可执行、可交付）
+- 可执行故障处理（症状 -> 定位 -> 修复）
+- UE5.6/UE5.7 兼容说明
 
 ### 技能列表
 
