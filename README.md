@@ -17,6 +17,12 @@ This repository provides reusable skill workflows to help with:
 - Performance and packaging checks
 - Architecture and module-boundary design
 
+### Skills Overview Screenshot
+
+![UE5 Skills Overview](./skills/assets/ue5-skills-overview.png)
+
+> Screenshot of the Codex Skills panel showing the installed UE5 skill set and enabled status (captured on March 3, 2026).
+
 ### Latest Update (March 2026)
 
 The skill pack has started a UE5.7 actionable upgrade pass.
@@ -99,6 +105,12 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - 调试与验证
 - 性能与打包检查
 - 架构与模块边界设计
+
+### Skills 总览截图
+
+![UE5 Skills 总览](./skills/assets/ue5-skills-overview.png)
+
+> 该图为 Codex Skills 面板截图，展示当前已安装的 UE5 技能集合及启用状态（截图时间：2026年3月3日）。
 
 ### 最新更新（2026年3月）
 
